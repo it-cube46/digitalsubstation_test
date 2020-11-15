@@ -1,7 +1,7 @@
 ﻿
 namespace DigitalUnderStation2
 {
-    partial class MainForm
+    partial class MainForm1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,67 +29,36 @@ namespace DigitalUnderStation2
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("bmpa");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("bmrz-50");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("bmrz-100");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("bmrz-120");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("bmrz-150");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("bmrz");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("РЗА", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6});
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("IGS-6325-24P4X");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Промышленные коммутаторы", new System.Windows.Forms.TreeNode[] {
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Релейная защита");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("FTP Ethernet");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("RS485");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Подключения", new System.Windows.Forms.TreeNode[] {
-            treeNode11,
-            treeNode12});
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm1));
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
             "Новый",
             "Настройка IED на прием-передачу GOOSE-сообщений",
             "15",
             "0%"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Недоступно",
-            "Тест №2"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Недоступно",
-            "Тест №3"}, -1);
             System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
             "Недоступно",
-            "Тест №4"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Недоступно",
-            "Тест №5"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Недоступно",
-            "Тест №6"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Недоступно",
-            "Тест №7"}, -1);
-            this.panelTest = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            "Тест №2"}, -1);
+            this.panelTestObor = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panelDevicesss = new System.Windows.Forms.Panel();
+            this.buttonItogTest = new System.Windows.Forms.Button();
+            this.buttonCheckDevices = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panelSelectDevice = new System.Windows.Forms.Panel();
+            this.panelListGroupDevice = new System.Windows.Forms.Panel();
+            this.buttonConnection = new System.Windows.Forms.Button();
+            this.buttonPromHub = new System.Windows.Forms.Button();
+            this.buttonR3A = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.treeViewSelectDevice = new System.Windows.Forms.TreeView();
+            this.textBoxHelper = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelFIOAndGroup = new System.Windows.Forms.Label();
             this.panelBeginShow = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelLogo = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.buttonRegistration = new System.Windows.Forms.Button();
             this.panelSelectTest = new System.Windows.Forms.Panel();
@@ -108,15 +77,37 @@ namespace DigitalUnderStation2
             this.panelFIOTester = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.panelTest.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.imageListDevice = new System.Windows.Forms.ImageList(this.components);
+            this.timerMsg = new System.Windows.Forms.Timer(this.components);
+            this.panelItogTest = new System.Windows.Forms.Panel();
+            this.panellistQwestion = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonITCheck = new System.Windows.Forms.Button();
+            this.ucQwestion15 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion14 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion13 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion12 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion11 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion10 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion9 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion8 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion7 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion6 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion5 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion4 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion3 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion2 = new DigitalUnderStation2.ucQwestion();
+            this.ucQwestion1 = new DigitalUnderStation2.ucQwestion();
+            this.panelTestObor.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.panelDevicesss.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panelSelectDevice.SuspendLayout();
+            this.panelListGroupDevice.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panelBeginShow.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelBottom.SuspendLayout();
             this.panelSelectTest.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -125,71 +116,78 @@ namespace DigitalUnderStation2
             this.panel5.SuspendLayout();
             this.panelFIOTester.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panelItogTest.SuspendLayout();
+            this.panellistQwestion.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelTest
+            // panelTestObor
             // 
-            this.panelTest.Controls.Add(this.panel2);
-            this.panelTest.Controls.Add(this.panelSelectDevice);
-            this.panelTest.Location = new System.Drawing.Point(12, 40);
-            this.panelTest.Name = "panelTest";
-            this.panelTest.Size = new System.Drawing.Size(853, 566);
-            this.panelTest.TabIndex = 3;
-            this.panelTest.Visible = false;
+            this.panelTestObor.Controls.Add(this.tabControl1);
+            this.panelTestObor.Controls.Add(this.panelSelectDevice);
+            this.panelTestObor.Location = new System.Drawing.Point(12, 40);
+            this.panelTestObor.Name = "panelTestObor";
+            this.panelTestObor.Size = new System.Drawing.Size(853, 566);
+            this.panelTestObor.TabIndex = 3;
+            this.panelTestObor.Visible = false;
             // 
-            // panel2
+            // tabControl1
             // 
-            this.panel2.AllowDrop = true;
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.listBox1);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(653, 566);
-            this.panel2.TabIndex = 1;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabControl1.Location = new System.Drawing.Point(224, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(629, 566);
+            this.tabControl1.TabIndex = 2;
             // 
-            // pictureBox3
+            // tabPage1
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(399, 146);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(120, 158);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.tabPage1.Controls.Add(this.panelDevicesss);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(621, 533);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Оборудование";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // panelDevicesss
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(45, 146);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(125, 158);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.panelDevicesss.AllowDrop = true;
+            this.panelDevicesss.Controls.Add(this.buttonItogTest);
+            this.panelDevicesss.Controls.Add(this.buttonCheckDevices);
+            this.panelDevicesss.Controls.Add(this.pictureBox4);
+            this.panelDevicesss.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDevicesss.Location = new System.Drawing.Point(3, 3);
+            this.panelDevicesss.Name = "panelDevicesss";
+            this.panelDevicesss.Size = new System.Drawing.Size(615, 527);
+            this.panelDevicesss.TabIndex = 1;
             // 
-            // listBox1
+            // buttonItogTest
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "1) Управление блоками (положение, форма или список настроек  с проверками на прав" +
-                "ильность ввода,",
-            "       вывод сообщений об ошибках и т.д.)",
-            "2) + Сценарий теста со списком ошибок и всплывающими подсказками (проработать)",
-            "3) Итоговый тест",
-            "4) Сетевая передача данных (Серверное приложение + Список тестируемых + Передача " +
-                "статистики тестирования)",
-            "",
-            "",
-            "На странице 20 приложения 1 Вообще непонятно где настройки GOOSE сообщений и к ка" +
-                "кому блоку они относятся"});
-            this.listBox1.Location = new System.Drawing.Point(6, 6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(627, 134);
-            this.listBox1.TabIndex = 0;
-            this.listBox1.Visible = false;
+            this.buttonItogTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonItogTest.Location = new System.Drawing.Point(423, 16);
+            this.buttonItogTest.Name = "buttonItogTest";
+            this.buttonItogTest.Size = new System.Drawing.Size(171, 43);
+            this.buttonItogTest.TabIndex = 7;
+            this.buttonItogTest.Text = "Итоговый тест";
+            this.buttonItogTest.UseVisualStyleBackColor = true;
+            this.buttonItogTest.Visible = false;
+            this.buttonItogTest.Click += new System.EventHandler(this.buttonItogTest_Click);
+            // 
+            // buttonCheckDevices
+            // 
+            this.buttonCheckDevices.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCheckDevices.Location = new System.Drawing.Point(157, 16);
+            this.buttonCheckDevices.Name = "buttonCheckDevices";
+            this.buttonCheckDevices.Size = new System.Drawing.Size(260, 43);
+            this.buttonCheckDevices.TabIndex = 6;
+            this.buttonCheckDevices.Text = "Проверка оборудования";
+            this.buttonCheckDevices.UseVisualStyleBackColor = true;
+            this.buttonCheckDevices.Click += new System.EventHandler(this.buttonCheckDevices_Click);
             // 
             // pictureBox4
             // 
@@ -200,77 +198,87 @@ namespace DigitalUnderStation2
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(621, 533);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ошибки";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panelSelectDevice
             // 
+            this.panelSelectDevice.Controls.Add(this.panelListGroupDevice);
             this.panelSelectDevice.Controls.Add(this.panel7);
-            this.panelSelectDevice.Controls.Add(this.treeViewSelectDevice);
             this.panelSelectDevice.Controls.Add(this.label2);
             this.panelSelectDevice.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSelectDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelSelectDevice.Location = new System.Drawing.Point(0, 0);
             this.panelSelectDevice.Name = "panelSelectDevice";
-            this.panelSelectDevice.Size = new System.Drawing.Size(200, 566);
+            this.panelSelectDevice.Size = new System.Drawing.Size(224, 566);
             this.panelSelectDevice.TabIndex = 0;
+            // 
+            // panelListGroupDevice
+            // 
+            this.panelListGroupDevice.Controls.Add(this.buttonConnection);
+            this.panelListGroupDevice.Controls.Add(this.buttonPromHub);
+            this.panelListGroupDevice.Controls.Add(this.buttonR3A);
+            this.panelListGroupDevice.Location = new System.Drawing.Point(4, 59);
+            this.panelListGroupDevice.Name = "panelListGroupDevice";
+            this.panelListGroupDevice.Size = new System.Drawing.Size(214, 333);
+            this.panelListGroupDevice.TabIndex = 5;
+            // 
+            // buttonConnection
+            // 
+            this.buttonConnection.Location = new System.Drawing.Point(10, 151);
+            this.buttonConnection.Name = "buttonConnection";
+            this.buttonConnection.Size = new System.Drawing.Size(192, 51);
+            this.buttonConnection.TabIndex = 3;
+            this.buttonConnection.Text = "Подключения";
+            this.buttonConnection.UseVisualStyleBackColor = true;
+            // 
+            // buttonPromHub
+            // 
+            this.buttonPromHub.Location = new System.Drawing.Point(10, 84);
+            this.buttonPromHub.Name = "buttonPromHub";
+            this.buttonPromHub.Size = new System.Drawing.Size(192, 51);
+            this.buttonPromHub.TabIndex = 1;
+            this.buttonPromHub.Text = "Промышленные коммутаторы";
+            this.buttonPromHub.UseVisualStyleBackColor = true;
+            this.buttonPromHub.Click += new System.EventHandler(this.buttonPromHub_Click);
+            // 
+            // buttonR3A
+            // 
+            this.buttonR3A.Location = new System.Drawing.Point(10, 17);
+            this.buttonR3A.Name = "buttonR3A";
+            this.buttonR3A.Size = new System.Drawing.Size(192, 51);
+            this.buttonR3A.TabIndex = 0;
+            this.buttonR3A.Text = "РЗА";
+            this.buttonR3A.UseVisualStyleBackColor = true;
+            this.buttonR3A.Click += new System.EventHandler(this.buttonR3A_Click);
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.textBoxHelper);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel7.Location = new System.Drawing.Point(0, 403);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 163);
+            this.panel7.Size = new System.Drawing.Size(224, 163);
             this.panel7.TabIndex = 4;
             // 
-            // textBox1
+            // textBoxHelper
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 5);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 151);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Подсказки";
-            // 
-            // treeViewSelectDevice
-            // 
-            this.treeViewSelectDevice.AllowDrop = true;
-            this.treeViewSelectDevice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeViewSelectDevice.Location = new System.Drawing.Point(0, 39);
-            this.treeViewSelectDevice.Name = "treeViewSelectDevice";
-            treeNode1.Name = "Узел4";
-            treeNode1.Text = "bmpa";
-            treeNode2.Name = "Узел5";
-            treeNode2.Text = "bmrz-50";
-            treeNode3.Name = "Узел6";
-            treeNode3.Text = "bmrz-100";
-            treeNode4.Name = "Узел7";
-            treeNode4.Text = "bmrz-120";
-            treeNode5.Name = "Узел8";
-            treeNode5.Text = "bmrz-150";
-            treeNode6.Name = "Узел9";
-            treeNode6.Text = "bmrz";
-            treeNode7.Name = "Узел0";
-            treeNode7.Text = "РЗА";
-            treeNode8.Name = "Узел12";
-            treeNode8.Text = "IGS-6325-24P4X";
-            treeNode9.Name = "Узел1";
-            treeNode9.Text = "Промышленные коммутаторы";
-            treeNode10.Name = "Узел2";
-            treeNode10.Text = "Релейная защита";
-            treeNode11.Name = "Узел10";
-            treeNode11.Text = "FTP Ethernet";
-            treeNode12.Name = "Узел11";
-            treeNode12.Text = "RS485";
-            treeNode13.Name = "Узел3";
-            treeNode13.Text = "Подключения";
-            this.treeViewSelectDevice.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode9,
-            treeNode10,
-            treeNode13});
-            this.treeViewSelectDevice.Size = new System.Drawing.Size(200, 527);
-            this.treeViewSelectDevice.TabIndex = 4;
-            this.treeViewSelectDevice.DragDrop += new System.Windows.Forms.DragEventHandler(this.treeViewSelectDevice_DragDrop);
+            this.textBoxHelper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxHelper.Location = new System.Drawing.Point(0, 0);
+            this.textBoxHelper.Multiline = true;
+            this.textBoxHelper.Name = "textBoxHelper";
+            this.textBoxHelper.Size = new System.Drawing.Size(224, 163);
+            this.textBoxHelper.TabIndex = 4;
+            this.textBoxHelper.Text = "Подсказки";
             // 
             // label2
             // 
@@ -278,7 +286,7 @@ namespace DigitalUnderStation2
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 39);
+            this.label2.Size = new System.Drawing.Size(224, 56);
             this.label2.TabIndex = 1;
             this.label2.Text = "Выбор устройств";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,31 +303,33 @@ namespace DigitalUnderStation2
             // 
             // panelBeginShow
             // 
-            this.panelBeginShow.Controls.Add(this.label1);
-            this.panelBeginShow.Controls.Add(this.pictureBox1);
+            this.panelBeginShow.Controls.Add(this.labelLogo);
+            this.panelBeginShow.Controls.Add(this.pictureBoxLogo);
             this.panelBeginShow.Controls.Add(this.panelBottom);
             this.panelBeginShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelBeginShow.Location = new System.Drawing.Point(886, 12);
+            this.panelBeginShow.Location = new System.Drawing.Point(936, 8);
             this.panelBeginShow.Name = "panelBeginShow";
             this.panelBeginShow.Size = new System.Drawing.Size(783, 470);
             this.panelBeginShow.TabIndex = 4;
             // 
-            // label1
+            // labelLogo
             // 
-            this.label1.Location = new System.Drawing.Point(7, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Это типа логотип";
+            this.labelLogo.Location = new System.Drawing.Point(7, 8);
+            this.labelLogo.Name = "labelLogo";
+            this.labelLogo.Size = new System.Drawing.Size(258, 23);
+            this.labelLogo.TabIndex = 1;
+            this.labelLogo.Text = "РОССЕТИ    IT-CUBE46";
             // 
-            // pictureBox1
+            // pictureBoxLogo
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(783, 424);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(783, 424);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // panelBottom
             // 
@@ -346,7 +356,7 @@ namespace DigitalUnderStation2
             this.panelSelectTest.Controls.Add(this.panel4);
             this.panelSelectTest.Controls.Add(this.panel3);
             this.panelSelectTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panelSelectTest.Location = new System.Drawing.Point(843, 46);
+            this.panelSelectTest.Location = new System.Drawing.Point(900, 42);
             this.panelSelectTest.Name = "panelSelectTest";
             this.panelSelectTest.Size = new System.Drawing.Size(801, 446);
             this.panelSelectTest.TabIndex = 5;
@@ -363,13 +373,8 @@ namespace DigitalUnderStation2
             this.listViewTests.FullRowSelect = true;
             this.listViewTests.HideSelection = false;
             this.listViewTests.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
             listViewItem3,
-            listViewItem4,
-            listViewItem5,
-            listViewItem6,
-            listViewItem7});
+            listViewItem4});
             this.listViewTests.Location = new System.Drawing.Point(0, 46);
             this.listViewTests.MultiSelect = false;
             this.listViewTests.Name = "listViewTests";
@@ -498,26 +503,336 @@ namespace DigitalUnderStation2
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Visible = false;
             // 
-            // MainForm
+            // imageListDevice
             // 
+            this.imageListDevice.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListDevice.ImageStream")));
+            this.imageListDevice.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListDevice.Images.SetKeyName(0, "bmrz-50-1.jpg");
+            this.imageListDevice.Images.SetKeyName(1, "bmrz-100-lico2.jpg");
+            this.imageListDevice.Images.SetKeyName(2, "bmrz-lico.jpg");
+            // 
+            // timerMsg
+            // 
+            this.timerMsg.Interval = 1000;
+            this.timerMsg.Tick += new System.EventHandler(this.TimerMsg_Tick);
+            // 
+            // panelItogTest
+            // 
+            this.panelItogTest.Controls.Add(this.panellistQwestion);
+            this.panelItogTest.Controls.Add(this.panel2);
+            this.panelItogTest.Location = new System.Drawing.Point(70, 8);
+            this.panelItogTest.Name = "panelItogTest";
+            this.panelItogTest.Size = new System.Drawing.Size(860, 429);
+            this.panelItogTest.TabIndex = 7;
+            // 
+            // panellistQwestion
+            // 
+            this.panellistQwestion.AutoScroll = true;
+            this.panellistQwestion.Controls.Add(this.ucQwestion15);
+            this.panellistQwestion.Controls.Add(this.ucQwestion14);
+            this.panellistQwestion.Controls.Add(this.ucQwestion13);
+            this.panellistQwestion.Controls.Add(this.ucQwestion12);
+            this.panellistQwestion.Controls.Add(this.ucQwestion11);
+            this.panellistQwestion.Controls.Add(this.ucQwestion10);
+            this.panellistQwestion.Controls.Add(this.ucQwestion9);
+            this.panellistQwestion.Controls.Add(this.ucQwestion8);
+            this.panellistQwestion.Controls.Add(this.ucQwestion7);
+            this.panellistQwestion.Controls.Add(this.ucQwestion6);
+            this.panellistQwestion.Controls.Add(this.ucQwestion5);
+            this.panellistQwestion.Controls.Add(this.ucQwestion4);
+            this.panellistQwestion.Controls.Add(this.ucQwestion3);
+            this.panellistQwestion.Controls.Add(this.ucQwestion2);
+            this.panellistQwestion.Controls.Add(this.ucQwestion1);
+            this.panellistQwestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panellistQwestion.Location = new System.Drawing.Point(0, 55);
+            this.panellistQwestion.Name = "panellistQwestion";
+            this.panellistQwestion.Size = new System.Drawing.Size(860, 374);
+            this.panellistQwestion.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonITCheck);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(860, 55);
+            this.panel2.TabIndex = 0;
+            // 
+            // buttonITCheck
+            // 
+            this.buttonITCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonITCheck.Location = new System.Drawing.Point(13, 8);
+            this.buttonITCheck.Name = "buttonITCheck";
+            this.buttonITCheck.Size = new System.Drawing.Size(210, 38);
+            this.buttonITCheck.TabIndex = 0;
+            this.buttonITCheck.Text = "Проверка теста";
+            this.buttonITCheck.UseVisualStyleBackColor = true;
+            this.buttonITCheck.Click += new System.EventHandler(this.buttonITCheck_Click);
+            // 
+            // ucQwestion15
+            // 
+            this.ucQwestion15.Answer1 = "Ответ1";
+            this.ucQwestion15.Answer2 = "Ответ2";
+            this.ucQwestion15.Answer3 = "Ответ3";
+            this.ucQwestion15.Answer4 = "Ответ4";
+            this.ucQwestion15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion15.Location = new System.Drawing.Point(4, 3196);
+            this.ucQwestion15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion15.Name = "ucQwestion15";
+            this.ucQwestion15.NumberQwestion = 15;
+            this.ucQwestion15.Qwestion = "Вопрос";
+            this.ucQwestion15.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion15.TabIndex = 14;
+            // 
+            // ucQwestion14
+            // 
+            this.ucQwestion14.Answer1 = "Ответ1";
+            this.ucQwestion14.Answer2 = "Ответ2";
+            this.ucQwestion14.Answer3 = "Ответ3";
+            this.ucQwestion14.Answer4 = "Ответ4";
+            this.ucQwestion14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion14.Location = new System.Drawing.Point(4, 2966);
+            this.ucQwestion14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion14.Name = "ucQwestion14";
+            this.ucQwestion14.NumberQwestion = 14;
+            this.ucQwestion14.Qwestion = "Вопрос";
+            this.ucQwestion14.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion14.TabIndex = 13;
+            // 
+            // ucQwestion13
+            // 
+            this.ucQwestion13.Answer1 = "Ответ1";
+            this.ucQwestion13.Answer2 = "Ответ2";
+            this.ucQwestion13.Answer3 = "Ответ3";
+            this.ucQwestion13.Answer4 = "Ответ4";
+            this.ucQwestion13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion13.Location = new System.Drawing.Point(4, 2736);
+            this.ucQwestion13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion13.Name = "ucQwestion13";
+            this.ucQwestion13.NumberQwestion = 13;
+            this.ucQwestion13.Qwestion = "Вопрос";
+            this.ucQwestion13.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion13.TabIndex = 12;
+            // 
+            // ucQwestion12
+            // 
+            this.ucQwestion12.Answer1 = "Ответ1";
+            this.ucQwestion12.Answer2 = "Ответ2";
+            this.ucQwestion12.Answer3 = "Ответ3";
+            this.ucQwestion12.Answer4 = "Ответ4";
+            this.ucQwestion12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion12.Location = new System.Drawing.Point(4, 2506);
+            this.ucQwestion12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion12.Name = "ucQwestion12";
+            this.ucQwestion12.NumberQwestion = 12;
+            this.ucQwestion12.Qwestion = "Вопрос";
+            this.ucQwestion12.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion12.TabIndex = 11;
+            // 
+            // ucQwestion11
+            // 
+            this.ucQwestion11.Answer1 = "Ответ1";
+            this.ucQwestion11.Answer2 = "Ответ2";
+            this.ucQwestion11.Answer3 = "Ответ3";
+            this.ucQwestion11.Answer4 = "Ответ4";
+            this.ucQwestion11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion11.Location = new System.Drawing.Point(4, 2276);
+            this.ucQwestion11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion11.Name = "ucQwestion11";
+            this.ucQwestion11.NumberQwestion = 11;
+            this.ucQwestion11.Qwestion = "Вопрос";
+            this.ucQwestion11.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion11.TabIndex = 10;
+            // 
+            // ucQwestion10
+            // 
+            this.ucQwestion10.Answer1 = "Ответ1";
+            this.ucQwestion10.Answer2 = "Ответ2";
+            this.ucQwestion10.Answer3 = "Ответ3";
+            this.ucQwestion10.Answer4 = "Ответ4";
+            this.ucQwestion10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion10.Location = new System.Drawing.Point(4, 2050);
+            this.ucQwestion10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion10.Name = "ucQwestion10";
+            this.ucQwestion10.NumberQwestion = 10;
+            this.ucQwestion10.Qwestion = "Вопрос";
+            this.ucQwestion10.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion10.TabIndex = 9;
+            // 
+            // ucQwestion9
+            // 
+            this.ucQwestion9.Answer1 = "Ответ1";
+            this.ucQwestion9.Answer2 = "Ответ2";
+            this.ucQwestion9.Answer3 = "Ответ3";
+            this.ucQwestion9.Answer4 = "Ответ4";
+            this.ucQwestion9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion9.Location = new System.Drawing.Point(4, 1820);
+            this.ucQwestion9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion9.Name = "ucQwestion9";
+            this.ucQwestion9.NumberQwestion = 9;
+            this.ucQwestion9.Qwestion = "Вопрос";
+            this.ucQwestion9.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion9.TabIndex = 8;
+            // 
+            // ucQwestion8
+            // 
+            this.ucQwestion8.Answer1 = "Ответ1";
+            this.ucQwestion8.Answer2 = "Ответ2";
+            this.ucQwestion8.Answer3 = "Ответ3";
+            this.ucQwestion8.Answer4 = "Ответ4";
+            this.ucQwestion8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion8.Location = new System.Drawing.Point(4, 1590);
+            this.ucQwestion8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion8.Name = "ucQwestion8";
+            this.ucQwestion8.NumberQwestion = 8;
+            this.ucQwestion8.Qwestion = "Вопрос";
+            this.ucQwestion8.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion8.TabIndex = 7;
+            // 
+            // ucQwestion7
+            // 
+            this.ucQwestion7.Answer1 = "Ответ1";
+            this.ucQwestion7.Answer2 = "Ответ2";
+            this.ucQwestion7.Answer3 = "Ответ3";
+            this.ucQwestion7.Answer4 = "Ответ4";
+            this.ucQwestion7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion7.Location = new System.Drawing.Point(4, 1360);
+            this.ucQwestion7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion7.Name = "ucQwestion7";
+            this.ucQwestion7.NumberQwestion = 7;
+            this.ucQwestion7.Qwestion = "Вопрос";
+            this.ucQwestion7.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion7.TabIndex = 6;
+            // 
+            // ucQwestion6
+            // 
+            this.ucQwestion6.Answer1 = "Ответ1";
+            this.ucQwestion6.Answer2 = "Ответ2";
+            this.ucQwestion6.Answer3 = "Ответ3";
+            this.ucQwestion6.Answer4 = "Ответ4";
+            this.ucQwestion6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion6.Location = new System.Drawing.Point(4, 1134);
+            this.ucQwestion6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion6.Name = "ucQwestion6";
+            this.ucQwestion6.NumberQwestion = 6;
+            this.ucQwestion6.Qwestion = "Вопрос";
+            this.ucQwestion6.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion6.TabIndex = 5;
+            // 
+            // ucQwestion5
+            // 
+            this.ucQwestion5.Answer1 = "Ответ1";
+            this.ucQwestion5.Answer2 = "Ответ2";
+            this.ucQwestion5.Answer3 = "Ответ3";
+            this.ucQwestion5.Answer4 = "Ответ4";
+            this.ucQwestion5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion5.Location = new System.Drawing.Point(4, 904);
+            this.ucQwestion5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion5.Name = "ucQwestion5";
+            this.ucQwestion5.NumberQwestion = 5;
+            this.ucQwestion5.Qwestion = "Вопрос";
+            this.ucQwestion5.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion5.TabIndex = 4;
+            // 
+            // ucQwestion4
+            // 
+            this.ucQwestion4.Answer1 = "Ответ1";
+            this.ucQwestion4.Answer2 = "Ответ2";
+            this.ucQwestion4.Answer3 = "Ответ3";
+            this.ucQwestion4.Answer4 = "Ответ4";
+            this.ucQwestion4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion4.Location = new System.Drawing.Point(4, 679);
+            this.ucQwestion4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion4.Name = "ucQwestion4";
+            this.ucQwestion4.NumberQwestion = 4;
+            this.ucQwestion4.Qwestion = "Вопрос";
+            this.ucQwestion4.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion4.TabIndex = 3;
+            // 
+            // ucQwestion3
+            // 
+            this.ucQwestion3.Answer1 = "Ответ1";
+            this.ucQwestion3.Answer2 = "Ответ2";
+            this.ucQwestion3.Answer3 = "Ответ3";
+            this.ucQwestion3.Answer4 = "Ответ4";
+            this.ucQwestion3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion3.Location = new System.Drawing.Point(4, 456);
+            this.ucQwestion3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion3.Name = "ucQwestion3";
+            this.ucQwestion3.NumberQwestion = 3;
+            this.ucQwestion3.Qwestion = "Вопрос";
+            this.ucQwestion3.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion3.TabIndex = 2;
+            // 
+            // ucQwestion2
+            // 
+            this.ucQwestion2.Answer1 = "Ответ1";
+            this.ucQwestion2.Answer2 = "Ответ2";
+            this.ucQwestion2.Answer3 = "Ответ3";
+            this.ucQwestion2.Answer4 = "Ответ4";
+            this.ucQwestion2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion2.Location = new System.Drawing.Point(4, 230);
+            this.ucQwestion2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion2.Name = "ucQwestion2";
+            this.ucQwestion2.NumberQwestion = 2;
+            this.ucQwestion2.Qwestion = "Вопрос";
+            this.ucQwestion2.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion2.TabIndex = 1;
+            // 
+            // ucQwestion1
+            // 
+            this.ucQwestion1.Answer1 = "Ответ1";
+            this.ucQwestion1.Answer2 = "Ответ2";
+            this.ucQwestion1.Answer3 = "Ответ3";
+            this.ucQwestion1.Answer4 = "Ответ4";
+            this.ucQwestion1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucQwestion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ucQwestion1.Location = new System.Drawing.Point(4, 5);
+            this.ucQwestion1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ucQwestion1.Name = "ucQwestion1";
+            this.ucQwestion1.NumberQwestion = 1;
+            this.ucQwestion1.Qwestion = "Вопрос";
+            this.ucQwestion1.Size = new System.Drawing.Size(808, 220);
+            this.ucQwestion1.TabIndex = 0;
+            // 
+            // MainForm1
+            // 
+            this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(957, 651);
             this.Controls.Add(this.panelBeginShow);
-            this.Controls.Add(this.panelTest);
+            this.Controls.Add(this.panelTestObor);
             this.Controls.Add(this.panelSelectTest);
             this.Controls.Add(this.panelFIOTester);
-            this.Name = "MainForm";
+            this.Controls.Add(this.panelItogTest);
+            this.Name = "MainForm1";
             this.Text = "Цифровая подстанция";
-            this.panelTest.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.panelTestObor.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.panelDevicesss.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panelSelectDevice.ResumeLayout(false);
+            this.panelListGroupDevice.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panelBeginShow.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelBottom.ResumeLayout(false);
             this.panelSelectTest.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -527,25 +842,25 @@ namespace DigitalUnderStation2
             this.panel5.ResumeLayout(false);
             this.panelFIOTester.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panelItogTest.ResumeLayout(false);
+            this.panellistQwestion.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelTest;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelTestObor;
+        private System.Windows.Forms.Panel panelDevicesss;
         private System.Windows.Forms.Panel panelSelectDevice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelBeginShow;
         private System.Windows.Forms.Button buttonRegistration;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelLogo;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Panel panelBottom;
         private System.Windows.Forms.Label labelFIOAndGroup;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panelSelectTest;
         private System.Windows.Forms.ListView listViewTests;
@@ -560,12 +875,41 @@ namespace DigitalUnderStation2
         private System.Windows.Forms.Button buttonBackToMainScreen;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button buttonStartTest;
-        private System.Windows.Forms.TreeView treeViewSelectDevice;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxHelper;
         private System.Windows.Forms.Panel panelFIOTester;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.ImageList imageListDevice;
+        private System.Windows.Forms.Button buttonCheckDevices;
+        private System.Windows.Forms.Timer timerMsg;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button buttonItogTest;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Panel panelItogTest;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button buttonITCheck;
+        private System.Windows.Forms.Panel panellistQwestion;
+        private ucQwestion ucQwestion1;
+        private ucQwestion ucQwestion15;
+        private ucQwestion ucQwestion14;
+        private ucQwestion ucQwestion13;
+        private ucQwestion ucQwestion12;
+        private ucQwestion ucQwestion11;
+        private ucQwestion ucQwestion10;
+        private ucQwestion ucQwestion9;
+        private ucQwestion ucQwestion8;
+        private ucQwestion ucQwestion7;
+        private ucQwestion ucQwestion6;
+        private ucQwestion ucQwestion5;
+        private ucQwestion ucQwestion4;
+        private ucQwestion ucQwestion3;
+        private ucQwestion ucQwestion2;
+        private System.Windows.Forms.Panel panelListGroupDevice;
+        private System.Windows.Forms.Button buttonConnection;
+        private System.Windows.Forms.Button buttonPromHub;
+        private System.Windows.Forms.Button buttonR3A;
     }
 }
 

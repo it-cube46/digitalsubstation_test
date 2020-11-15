@@ -53,6 +53,7 @@ namespace DigitalUnderStation2
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(12, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(353, 47);
@@ -65,8 +66,8 @@ namespace DigitalUnderStation2
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(353, 149);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(353, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
@@ -76,6 +77,8 @@ namespace DigitalUnderStation2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(242, 20);
             this.textBox1.TabIndex = 10;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.textBox1.DoubleClick += new System.EventHandler(this.textBox1_DoubleClick);
             // 
             // label2
             // 

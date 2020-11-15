@@ -35,10 +35,6 @@ namespace DigitalUnderStation2
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,8 +50,6 @@ namespace DigitalUnderStation2
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
@@ -87,25 +81,25 @@ namespace DigitalUnderStation2
             // 
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 505);
+            this.panel2.Location = new System.Drawing.Point(0, 407);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(373, 34);
             this.panel2.TabIndex = 3;
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 29);
             this.button1.TabIndex = 1;
             this.button1.Text = "Закрыть";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
             this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.button3);
@@ -115,44 +109,8 @@ namespace DigitalUnderStation2
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 74);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(373, 431);
+            this.panel3.Size = new System.Drawing.Size(373, 333);
             this.panel3.TabIndex = 4;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(304, 329);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(41, 94);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label5);
-            this.panel7.Controls.Add(this.pictureBox4);
-            this.panel7.Location = new System.Drawing.Point(12, 326);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(286, 100);
-            this.panel7.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(101, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 94);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "БМРЗ-50";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(6, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(89, 94);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
             // 
             // button4
             // 
@@ -162,6 +120,7 @@ namespace DigitalUnderStation2
             this.button4.TabIndex = 5;
             this.button4.Text = "+";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel6
             // 
@@ -178,7 +137,7 @@ namespace DigitalUnderStation2
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 94);
             this.label4.TabIndex = 1;
-            this.label4.Text = "БМРЗ-50";
+            this.label4.Text = "БМРЗ-150";
             // 
             // pictureBox3
             // 
@@ -198,6 +157,7 @@ namespace DigitalUnderStation2
             this.button3.TabIndex = 3;
             this.button3.Text = "+";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel5
             // 
@@ -214,7 +174,7 @@ namespace DigitalUnderStation2
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(182, 94);
             this.label3.TabIndex = 1;
-            this.label3.Text = "БМРЗ-50";
+            this.label3.Text = "БМРЗ-100";
             // 
             // pictureBox2
             // 
@@ -234,6 +194,7 @@ namespace DigitalUnderStation2
             this.button2.TabIndex = 1;
             this.button2.Text = "+";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -265,12 +226,12 @@ namespace DigitalUnderStation2
             // FormSelectDevice
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(373, 539);
+            this.ClientSize = new System.Drawing.Size(373, 441);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormSelectDevice";
@@ -281,8 +242,6 @@ namespace DigitalUnderStation2
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
@@ -300,10 +259,6 @@ namespace DigitalUnderStation2
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;

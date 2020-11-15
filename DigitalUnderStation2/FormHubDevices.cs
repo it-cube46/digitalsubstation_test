@@ -10,19 +10,13 @@ using System.Windows.Forms;
 
 namespace DigitalUnderStation2
 {
-    public partial class FormSelectDevice : Form
+    public partial class FormHubDevices : Form
     {
         public MainForm1 lMainForm;
 
-        public FormSelectDevice()
+        public FormHubDevices()
         {
             InitializeComponent();
-        }
-
-        private void FormSelectDevice_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            e.Cancel = true;
-            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,19 +24,15 @@ namespace DigitalUnderStation2
             this.Hide();
         }
 
+        private void FormHubDevices_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            this.Hide();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            lMainForm.AddDev01();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            lMainForm.AddDev02();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            lMainForm.AddDev03();
+            lMainForm.AddDevHUB();
         }
     }
 }

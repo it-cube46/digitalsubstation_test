@@ -16,5 +16,19 @@ namespace DigitalUnderStation2
         {
             InitializeComponent();
         }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length > 0)
+                button1.Enabled = true;
+            else
+                button1.Enabled = false;
+        }
+
+        private void textBox1_DoubleClick(object sender, EventArgs e)
+        {
+            textBox1.Text = "Пользователь 1";
+            comboBox1.SelectedIndex = 2;
+        }
     }
 }
